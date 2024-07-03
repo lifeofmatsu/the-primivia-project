@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/statusBar.css"/>
+    <title>Primivia</title>
+</head>
+<body>
+    <main class="gameContainer">
+        <section class="statusBar">
+            <!-- 1P health bar -->
+            <div class="p1HPContainer">
+                <div id="totalP1HP"></div>
+                <div id="unusedP1HP"></div>
+            </div>
+            <!-- interval timer -->
+            <div id="matchClock">10</div>
+            <!-- 2P health bar -->
+            <div class="p2HPContainer">
+                <div id="totalP2HP"></div>
+                <div id="unusedP2HP"></div>
+            </div>
+        </section>
+        <div id="textDisplay">Tie</div>
+        <canvas></canvas>
+    </main>
+
+    <script src="./js/utils/helpers.js" type="module"></script>
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>

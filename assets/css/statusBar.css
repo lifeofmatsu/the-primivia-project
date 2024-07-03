@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.gameContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.statusBar {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+}
+
+#matchClock {
+    background-color: #f6c177;
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p1HPContainer, .p2HPContainer {
+    position: relative;
+    height: 30px;
+    width: 100%;
+}
+
+.p1HPContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#totalP1HP, #totalP2HP {
+    background-color: #00539a;
+    height: 30px;
+}
+
+#totalP1HP {
+    width: 100%;
+}
+
+#unusedP1HP, #unusedP2HP {
+    position: absolute;
+    background: #198038;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#unusedP1HP {
+    width: 100%;
+}
+
+#unusedP2HP {
+    left: 0;
+}
+
+#textDisplay {
+    position: absolute;
+    color: #e0def4;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
